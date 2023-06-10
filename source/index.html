@@ -5,17 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Alyona Sytyakova">
   <title>Personal blog of Alenushka</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header container">
     <!-- какой то логотип -->
-    <nav class="page-header__nav">
-      <ul>
-        <li>
-          <a href="">animations</a>
-        </li>
-      </ul>
+    <nav class="navigation">
+      <div class="navigation__container">
+        <ul class="navigation__ul">
+          <li class="navigation__li navigation--active">
+            <a href="">Home</a>
+          </li>
+          <li class="navigation__li">
+            <a href="">Animations</a>
+          </li>
+          <li class="navigation__li">
+            <a href="">Experiments</a>
+          </li>
+          <li class="navigation__li">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+        <!-- <div class="navigation__line"></div> -->
+      </div>
       <!-- //здесь будет навигация о разделах блога -->
     </nav>
   </header>
@@ -24,8 +37,11 @@
       <!-- // Здесь я рассказываю немного о себе и о чем этот блог. -->
     </section>
     <!-- // здесь идут разделы блога -->
-    <section class="animation"></section>
+    <section class="animation">
+
+    </section>
   </main>
+  <script src="./js/script.js" type="module"></script>
 </body>
 </html>
 
