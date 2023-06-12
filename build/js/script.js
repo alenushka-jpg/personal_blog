@@ -1,1 +1,1 @@
-import"./navigation-animation.js";
+import animate from"./animaterplus.js";animate({elements:".service-block",duration:2e3,delay:e=>100*e,transform:["scale(0)","scale(1)"]});
