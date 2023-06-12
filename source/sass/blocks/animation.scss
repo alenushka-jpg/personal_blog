@@ -1,9 +1,17 @@
 .animation {
+  position: relative;
   background-size: 100%;
   background-position: center;
   position: relative;
   padding: 15px 0 115px;
   background-color: #f9f9f9;
+}
+
+.animation__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0E091B;
 }
 
 .animation__ul {
@@ -15,39 +23,9 @@
   list-style: none;
 }
 
-.animation__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #0E091B;
-}
-
-.animation__gif {
-  position: absolute;
-  top: 50px;
-  width: 100px;
-  height: 200px;
-}
-
-.animation__gif img {
-  width: 100%;
-  text-align: center;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: #ffffff36;
-}
-
-.animation__link-p {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.animation__link-paragraph {
-  font-size: 22px;
-  line-height: 32px;
-  color: #253d5f;
+.animation__li {
   margin-bottom: 30px;
+  max-width: 400px;
 }
 
 .animation__service-block {
@@ -76,8 +54,8 @@
 }
 
 .animation__service-block:before,
-.animation__service-block .hover-content:before,
-.animation__service-block .hover-content:after {
+.animation__service-block .animation__hover-content:before,
+.animation__service-block .animation__hover-content:after {
   will-change: transform;
 }
 
@@ -90,12 +68,7 @@
   border-color: transparent;
 }
 
-.animation .animation__li {
-  margin-bottom: 30px;
-  max-width: 400px;
-}
-
-.animation .animation__service-block .hover-content {
+.animation__service-block .animation__hover-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -107,11 +80,11 @@
   transition: all 0.3s linear;
 }
 
-.animation .animation__service-block:hover .hover-content {
+.animation__service-block:hover .animation__hover-content {
   opacity: 1;
 }
 
-.animation .animation__service-block .hover-content:before {
+.animation__service-block .animation__hover-content:before {
   content: "";
   width: 493px;
   height: 493px;
@@ -125,13 +98,13 @@
   opacity: 0;
 }
 
-.animation .animation__service-block:hover .hover-content:before {
+.animation__service-block:hover .animation__hover-content:before {
   opacity: 1;
   transform: translate(0, 0);
   transition: all 0.9s linear;
 }
 
-.animation .animation__service-block .hover-content:after {
+.animation__service-block .animation__hover-content:after {
   content: "";
   width: 602px;
   height: 602px;
@@ -145,7 +118,7 @@
   opacity: 0;
 }
 
-.animation .animation__service-block:hover .hover-content:after {
+.animation .animation__service-block:hover .animation__hover-content:after {
   opacity: 1;
   transform: translate(0, 0);
   transition: all 1.3s linear;
@@ -228,6 +201,34 @@
   color: #fff;
 }
 
+.animation__link-p {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.animation__link-paragraph {
+  font-size: 22px;
+  line-height: 32px;
+  color: #253d5f;
+  margin-bottom: 30px;
+}
+
+.animation__gif {
+  position: absolute;
+  top: 50px;
+  width: 100px;
+  height: 200px;
+}
+
+.animation__gif img {
+  width: 100%;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #ffffff36;
+}
+
 @keyframes scale-upOne {
   0% {
     transform: scale(1);
@@ -237,4 +238,10 @@
   }
 }
 
-
+.animation__canvas {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
